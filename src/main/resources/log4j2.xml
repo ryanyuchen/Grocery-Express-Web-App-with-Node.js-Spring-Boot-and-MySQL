@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+
+    <Appenders>
+        <Console name="stdout" target="SYSTEM_OUT">
+            <PatternLayout pattern="%5level [%t] - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="edu.gatech.cs6310.cs6310_summer22_group6.mapper.OrderMapper" level="debug"/>
+        <Logger name="edu.gatech.cs6310.cs6310_summer22_group6.mapper.UserMapper" level="debug"/>
+        <Logger name="edu.gatech.cs6310.cs6310_summer22_group6.mapper.CustomerMapper" level="debug"/>
+        <Logger name="edu.gatech.cs6310.cs6310_summer22_group6.mapper.DroneMapper" level="debug"/>
+        <Root level="info" >
+            <AppenderRef ref="stdout"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
